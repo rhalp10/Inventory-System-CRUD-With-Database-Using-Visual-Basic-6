@@ -1,0 +1,11 @@
+Line 39: Class WelchButton.lvButtons_H of control cmdAdd was not a loaded control class.
+Line 40: The property name Default in cmdAdd is invalid.
+Line 46: The property name _ExtentX in cmdAdd is invalid.
+Line 47: The property name _ExtentY in cmdAdd is invalid.
+Line 48: The property name Caption in cmdAdd is invalid.
+Line 49: The property name CapAlign in cmdAdd is invalid.
+Line 50: The property name BackStyle in cmdAdd is invalid.
+Line 60: The property name cGradient in cmdAdd is invalid.
+Line 61: The property name Mode in cmdAdd is invalid.
+Line 62: The property name Value in cmdAdd is invalid.
+Line 63: The property name cBack in cmdAdd is invalid.
