@@ -7,19 +7,22 @@ Begin VB.Form Form1
    ClientHeight    =   5115
    ClientLeft      =   45
    ClientTop       =   330
-   ClientWidth     =   6855
+   ClientWidth     =   6840
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   5115
-   ScaleWidth      =   6855
+   ScaleWidth      =   6840
    StartUpPosition =   2  'CenterScreen
    Begin VB.PictureBox cmdAdd 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
-      Left            =   0
+      Left            =   120
       Picture         =   "Form1.frx":0000
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   1
       Top             =   4560
       Width           =   1215
@@ -51,8 +54,8 @@ Begin VB.Form Form1
       ForeColor       =   -2147483640
       Orientation     =   0
       Enabled         =   -1
-      Connect         =   $"Form1.frx":0605
-      OLEDBString     =   $"Form1.frx":06B5
+      Connect         =   $"Form1.frx":35FF
+      OLEDBString     =   $"Form1.frx":36AF
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -115,41 +118,53 @@ Begin VB.Form Form1
       EndProperty
    End
    Begin VB.PictureBox cmdEdit 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
       Left            =   1440
-      Picture         =   "Form1.frx":0765
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      Picture         =   "Form1.frx":375F
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   2
       Top             =   4560
       Width           =   1215
    End
    Begin VB.PictureBox cmdDelete 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
       Left            =   2760
-      Picture         =   "Form1.frx":0D80
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      Picture         =   "Form1.frx":6DEF
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   3
       Top             =   4560
       Width           =   1215
    End
    Begin VB.PictureBox cmdSearch 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
-      Left            =   5520
-      Picture         =   "Form1.frx":1414
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      Left            =   5400
+      Picture         =   "Form1.frx":A53C
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   4
       Top             =   4560
       Width           =   1215
    End
    Begin VB.PictureBox cmdRefresh 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
-      Left            =   4200
-      Picture         =   "Form1.frx":1B4F
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      Left            =   4080
+      Picture         =   "Form1.frx":DC4E
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   5
       Top             =   4560
       Width           =   1215
@@ -161,14 +176,8 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-'CODED BY:  Welch Regime Marcellana
-'I hope that my code will help you
-'JOIN IN MY FORUM SITE, IT'S FREE TO REGISTER!!.
-'Post topic about VB Tutorials, Love/Relationships, Careers/At the Job,
-'Movie, Music etc.
-'www.thesacrificiallamb.com
-'This is a new website and currently looking for members.
-'Your registration is very much appreciated :)  Thank you.
+'Coded by: Welch Regime Marcellana
+'Re-Edit by: Rhalp 10
 
 Private Sub cmdAdd_Click()
   frmNew.Show 1

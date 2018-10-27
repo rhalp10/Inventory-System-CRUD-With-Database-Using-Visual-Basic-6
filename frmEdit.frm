@@ -36,11 +36,14 @@ Begin VB.Form frmEdit
       Width           =   3375
    End
    Begin VB.PictureBox cmdAdd 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
       Left            =   3360
       Picture         =   "frmEdit.frx":0000
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   2
       Top             =   1080
       Width           =   1215

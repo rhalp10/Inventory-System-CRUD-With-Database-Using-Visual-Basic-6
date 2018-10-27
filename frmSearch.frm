@@ -37,11 +37,14 @@ Begin VB.Form frmSearch
       Width           =   3255
    End
    Begin VB.PictureBox cmdSearch 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
       Height          =   375
       Left            =   3240
       Picture         =   "frmSearch.frx":0000
-      ScaleHeight     =   315
-      ScaleWidth      =   1155
+      ScaleHeight     =   345
+      ScaleWidth      =   1185
       TabIndex        =   4
       Top             =   1200
       Width           =   1215
@@ -87,13 +90,18 @@ Private Sub cmdSearch_Click()
   End If
   
   Select Case LCase(Me.cmbSearch.Text)
+  Case "id"
+      SQL = "SELECT  tbl_info.item_Name,tbl_info.item_ID, tbl_info.item_Name, tbl_info.item_Descr " & _
+            "From tbl_info WHERE (((tbl_info.item_ID) Like '" & Me.txtSearch.Text & "%')) order by tbl_info.item_ID asc;"
+      Unload Me
+      Call goSearch(SQL)
     Case "name"
       SQL = "SELECT  tbl_info.item_Name,tbl_info.item_ID, tbl_info.item_Name, tbl_info.item_Descr " & _
             "From tbl_info WHERE (((tbl_info.item_Name) Like '" & Me.txtSearch.Text & "%')) order by tbl_info.item_Name asc;"
       Unload Me
       Call goSearch(SQL)
 
-    Case "address"
+    Case "description"
       SQL = "SELECT tbl_info.item_Name, tbl_info.item_ID, tbl_info.item_Name, tbl_info.item_Descr " & _
             "From tbl_info WHERE (((tbl_info.item_Descr) Like '" & Me.txtSearch.Text & "%')) order by tbl_info.item_Descr asc;"
       Unload Me
@@ -103,8 +111,9 @@ End Sub
 
 Private Sub Form_Load()
   With Me.cmbSearch
+    .AddItem "ID"
     .AddItem "Name"
-    .AddItem "Address"
+    .AddItem "Description"
   End With
 End Sub
 

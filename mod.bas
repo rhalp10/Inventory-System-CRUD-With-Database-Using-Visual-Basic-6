@@ -1,13 +1,7 @@
 Attribute VB_Name = "mod"
 Option Explicit
-'CODED BY:  Welch Regime Marcellana
-'I hope that my code will help you
-'JOIN IN MY FORUM SITE, IT'S FREE TO REGISTER!!.
-'Post topic about VB Tutorials, Love/Relationships, Careers/At the Job,
-'Movie, Music etc.
-'www.thesacrificiallamb.com
-'This is a new website and currently looking for members.
-'Your registration is very much appreciated :)  Thank you.
+'Coded by: Welch Regime Marcellana
+'Re-Edit by: Rhalp 10
 
 Global Conn As New ADODB.Connection, RS As New ADODB.Recordset, Item As ListItem
 Global onTop As New clsOnTop, I As Integer, SQL As String, Cancel As Boolean

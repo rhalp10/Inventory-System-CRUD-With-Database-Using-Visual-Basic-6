@@ -73,14 +73,8 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-'CODED BY:  Welch Regime Marcellana
-'I hope that my code will help you
-'JOIN IN MY FORUM SITE, IT'S FREE TO REGISTER!!.
-'Post topic about VB Tutorials, Love/Relationships, Careers/At the Job,
-'Movie, Music etc.
-'www.thesacrificiallamb.com
-'This is a new website and currently looking for members.
-'Your registration is very much appreciated :)  Thank you.
+'Coded by: Welch Regime Marcellana
+'Re-Edit by: Rhalp 10
 
 Private Declare Function SendMessage Lib "User32" Alias "SendMessageA" (ByVal hWnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
 Private Declare Sub ReleaseCapture Lib "User32" ()
