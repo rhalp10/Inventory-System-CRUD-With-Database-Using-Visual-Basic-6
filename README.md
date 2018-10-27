@@ -1,5 +1,6 @@
 #  Inventory System Using VB 6 With MS Access Database
-[![GitHub forks](https://img.shields.io/badge/release-v1.1.0-blue.svg?style=for-the-badge)](https://github.com/rhalp10/Inventory-System-Using-VB-6-With-MS-Access-Databas/releases)
+[![GitHub forks](https://img.shields.io/badge/release-v1.1.0-blue.svg?style=for-the-badge)](https://github.com/rhalp10/Inventory-System-Using-VB-6-With-MS-Access-Databas/releases
+
 Inventory System Using VB 6 With MS Access Database System Preview.
 
 ### Video Preview Here:
